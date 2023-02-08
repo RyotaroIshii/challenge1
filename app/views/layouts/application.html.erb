@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Challenge1</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header style="background-color:#ffaf9b;">
+      <div class="container">
+        <nav class="navbar navbar-light">
+          <a class="navbar-brand" href="#mv"><%= image_tag 'logo', size: "130x65" %></a>
+          <a class="nav-link" href="Portfolio">Portfolio</a>
+          <a class="nav-link" href="#Features">Features</a>
+          <a class="nav-link" href="#Profile">Profile</a>
+          <a class="nav-link" href="#Contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+    <%= yield %>
+    <footer>
+
+    </footer>
+  </body>
+</html>
